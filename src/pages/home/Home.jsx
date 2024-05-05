@@ -9,7 +9,6 @@ import Card from "../../components/card/Card";
 
 const Home = () => {
   const { data } = useGetProductsQuery();
-  console.log(data);
   return (
     <main>
       <div className="hero">
@@ -98,7 +97,9 @@ const Home = () => {
             <div className="latest-wrapper">
               {LATEST_CARD?.map((el) => (
                 <div key={el.id} className="latest-card">
-                  <img src={el.img} alt="" />
+                  <div className="latest-card-img">
+                    <img src={el.img} alt="" />
+                  </div>
                   <div className="latest-card-info">
                     <p>01 Jan, 2015</p>
                     <h1>{el.title}</h1>

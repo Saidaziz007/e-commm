@@ -27,18 +27,22 @@ main {
 }
 
 .hero-banner-wrapper {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   top: -130px;
-  left: 150px;
-  right: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 0;
+  right: 0;
   gap: 10px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .hero-banner-card {
-  width: 400px;
+  max-width: 400px;
   padding: 15px;
   min-height: 300px;
   display: flex;
@@ -117,16 +121,18 @@ main {
 
 .adidas-banner-right {
   position: relative;
+  width: 50%;
 }
 
 .adidas-banner-right img {
-  width: 693px;
+  max-width: 630px;
   position: absolute;
   top: -297px;
+  width: 100%;
 }
 
 .support-banner {
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .support-wrapper {
@@ -161,7 +167,7 @@ main {
 }
 
 .latest {
-  padding-top: 70px;
+  padding-top: 130px;
 }
 
 .latest-all h1 {
@@ -180,7 +186,6 @@ main {
   display: flex;
   align-items: center;
   gap: 5px;
-  width: 33%;
 }
 
 .latest-card-info {
@@ -197,7 +202,7 @@ main {
 }
 
 .featured {
-  padding-top: 70px;
+  padding-top: 120px;
 }
 
 .featured-top h1 {
@@ -210,15 +215,14 @@ main {
 }
 
 .featured-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .featured-card {
   display: flex;
   align-items: center;
-  width: 33%;
   gap: 20px;
 }
 
@@ -249,8 +253,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .featured-input input {
@@ -296,4 +300,66 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+
+@media (max-width: 970px) {
+  .latest-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 940px) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 870px) {
+  .featured-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 790px) {
+  .hero-banner-wrapper {
+    position: relative;
+    top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 30px;
+  }
+  .cards {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 714px) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  .latest-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .latest-card {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 10px;
+  }
+  .latest-card-img {
+    width: 50%;
+  }
+  .latest-card-img img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 590px) {
+  .featured-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }

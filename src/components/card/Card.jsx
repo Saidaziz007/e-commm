@@ -3,6 +3,7 @@ import rating from "../../assets/images/rating.svg";
 import "./Card.css";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineShoppingCart } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   return (
@@ -21,7 +22,9 @@ const Card = ({ data }) => {
             <img src={el.img} alt="" />
           </div>
           <div className="card-info">
-            <h1>{el.title}</h1>
+            <Link to={`/product/${el.id}`}>
+              <h1>{el.title}</h1>
+            </Link>
             <img src={rating} alt="" />
             <div className="card-price">
               <h3>${el.price}</h3>

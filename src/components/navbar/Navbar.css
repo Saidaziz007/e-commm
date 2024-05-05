@@ -79,3 +79,15 @@ header {
 .nav-bottom-items-a.active {
   color: #40bfff;
 }
+
+@media (max-width: 730px) {
+  .nav-bottom-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 631px) {
+  .nav-bottom-list {
+    gap: 10px;
+  }
+}
