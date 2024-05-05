@@ -1,0 +1,53 @@
+.contact-all {
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-left {
+  width: 50%;
+  border: 1px solid;
+  padding: 50px;
+  background-color: rgba(64, 191, 255, 1);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-left h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+.contact-left p {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact-right label {
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.contact-right input {
+  padding: 15px;
+  width: 100%;
+  max-width: 510px;
+}
+
+.contact-right textarea {
+  width: 100%;
+  max-width: 510px;
+  padding: 15px;
+  resize: none;
+}

@@ -1,0 +1,299 @@
+main {
+  padding-top: 103px;
+}
+
+.hero {
+  background-image: url(../../assets/images/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 626px;
+}
+
+.hero-all {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-all h1 {
+  color: white;
+  font-size: 60px;
+  max-width: 500px;
+}
+
+.hero-banner {
+  position: relative;
+}
+
+.hero-banner-wrapper {
+  position: absolute;
+  top: -130px;
+  left: 150px;
+  right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-banner-card {
+  width: 400px;
+  padding: 15px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.hero-banner-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-banner-card-top h2 {
+  color: #223263;
+  font-size: 20px;
+  max-width: 165px;
+}
+
+.hero-banner-card-top h1 {
+  color: #40bfff;
+}
+
+.hero-banner-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hero-banner-card-bottom p {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.hero-banner-card-bottom h4 {
+  color: #fb7181;
+}
+
+.adidas-banner {
+  background-color: #40bfff;
+  height: 450px;
+}
+
+.adidas-banner-all {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.adidas-banner-left {
+  width: 50%;
+  color: white;
+}
+
+.adidas-banner-left h1 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.adidas-banner-left p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.adidas-banner-left button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.adidas-banner-right {
+  position: relative;
+}
+
+.adidas-banner-right img {
+  width: 693px;
+  position: absolute;
+  top: -297px;
+}
+
+.support-banner {
+  padding-top: 30px;
+}
+
+.support-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.support-card {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.support-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.support-card h1 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.support-card p {
+  max-width: 200px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.latest {
+  padding-top: 70px;
+}
+
+.latest-all h1 {
+  text-align: center;
+}
+
+.latest-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.latest-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 33%;
+}
+
+.latest-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-card-info p {
+  color: grey;
+}
+
+.latest-card-info h1 {
+  text-align: start;
+}
+
+.featured {
+  padding-top: 70px;
+}
+
+.featured-top h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.featured-card-img {
+  height: 100%;
+}
+
+.featured-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-card {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  gap: 20px;
+}
+
+.featured-card-info p {
+  font-size: 20px;
+  max-width: 200px;
+  padding-bottom: 10px;
+}
+
+.featured-card-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.featured-card-price h3 {
+  color: #fb7181;
+}
+
+.featured-card-price p {
+  color: grey;
+  font-size: 17px;
+  text-decoration: line-through;
+  padding: 0;
+}
+
+.featured-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.featured-input input {
+  padding: 15px;
+  width: 100%;
+  max-width: 535px;
+  border: 2px solid #40bfff;
+  border-radius: 5px 0 0 5px;
+}
+
+.featured-input button {
+  background-color: #40bfff;
+  padding: 13px 20px;
+  border: 2px solid #40bfff;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.cards {
+  padding-top: 220px;
+  padding-bottom: 80px;
+}
+
+.card-top {
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.card-list li {
+  font-size: 25px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
