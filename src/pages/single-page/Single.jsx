@@ -9,8 +9,7 @@ import "./Single.css";
 import Card from "../../components/card/Card";
 import { useGetProductsQuery } from "../../context/productApi";
 
-const API_URL =
-  "https://6634b1ce9bb0df2359a2693f.mockapi.io/saidaziz-api/e-comm";
+const API_URL = "https://dummyjson.com/products/";
 
 const Single = () => {
   let { id } = useParams();
@@ -30,14 +29,25 @@ const Single = () => {
           <div className="single-top">
             <div className="single-top-1">
               <div className="single-top-left">
-                <img src={product?.img} alt="" />
+                {product.images && product.images.length > 0 && (
+                  <img src={product.images[0]} alt="" />
+                )}
                 <div className="single-top-left-bottom">
-                  <img src={product?.img} alt="" />
-                  <img src={product?.img} alt="" />
-                  <img src={product?.img} alt="" />
-                  <img src={product?.img} alt="" />
+                  {product.images && product.images.length > 1 && (
+                    <img src={product.images[1]} alt="" />
+                  )}
+                  {product.images && product.images.length > 2 && (
+                    <img src={product.images[2]} alt="" />
+                  )}
+                  {product.images && product.images.length > 3 && (
+                    <img src={product.images[3]} alt="" />
+                  )}
+                  {product.images && product.images.length > 4 && (
+                    <img src={product.images[4]} alt="" />
+                  )}
                 </div>
               </div>
+
               <div className="single-top-right">
                 <h1>{product?.title}</h1>
                 <div className="single-top-right-1">
@@ -113,7 +123,9 @@ const Single = () => {
               <h2>BEST SELLER</h2>
               <div className="card">
                 <div className="card-img">
-                  <img src={product.img} alt="" />
+                  {product.images && product.images.length > 0 && (
+                    <img src={product.images[0]} alt="" />
+                  )}
                 </div>
                 <div className="card-info">
                   <h1>{product.title}</h1>
@@ -129,7 +141,7 @@ const Single = () => {
           <div className="single-bottom">
             <h1 className="single-bottom-h1">RELATED PRODUCTS</h1>
             <div className="single-bottom-wrapper">
-              <Card data={data.slice(2, 6)} />
+              <Card data={data?.products.slice(8, 12)} />
             </div>
           </div>
         </div>

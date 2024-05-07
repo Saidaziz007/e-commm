@@ -57,7 +57,7 @@ const Home = () => {
           </div>
           <div className="cards-bottom">
             <div className="card-wrapper">
-              <Card data={data} />
+              <Card data={data?.products.slice(0, 8)} />
             </div>
           </div>
         </div>

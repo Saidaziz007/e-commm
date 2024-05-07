@@ -37,6 +37,12 @@ header {
   font-size: 18px;
 }
 
+.nav-top-items-icons a {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
 .nav-top-items-search {
   display: flex;
   align-items: center;

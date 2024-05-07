@@ -4,25 +4,10 @@ export const productApi = api.injectEndpoints({
   endpoints: (build) => ({
     getProducts: build.query({
       query: (params) => ({
-        url: "/e-comm",
+        url: "/products",
         params,
       }),
       providesTags: ["Product"],
-    }),
-    createProduct: build.mutation({
-      query: (body) => ({
-        url: "/auth/sign-up",
-        method: "POST",
-        body,
-      }),
-      invalidatesTags: ["Product"],
-    }),
-    deleteProduct: build.mutation({
-      query: (id) => ({
-        url: `/users/${id}`,
-        method: "DELETE",
-      }),
-      invalidatesTags: ["Product"],
     }),
   }),
 });

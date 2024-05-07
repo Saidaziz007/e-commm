@@ -1,0 +1,15 @@
+.wishlist {
+  padding-top: 130px;
+  padding-bottom: 40px;
+}
+
+.wishlist-top {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.wishlist-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

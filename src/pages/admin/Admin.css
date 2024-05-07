@@ -1,0 +1,20 @@
+.admin {
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+
+.admin-all {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.admin-all button {
+  width: 200px;
+  padding: 10px 15px;
+  background-color: rgba(51, 160, 255, 1);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}

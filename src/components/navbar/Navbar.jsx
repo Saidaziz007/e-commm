@@ -26,9 +26,15 @@ const Navbar = () => {
             </div>
             <div className="nav-top-items">
               <div className="nav-top-items-icons">
-                <FaRegUser />
-                <FaRegHeart />
-                <FiShoppingCart />
+                <NavLink to={"/login"}>
+                  <FaRegUser />
+                </NavLink>
+                <NavLink to={"/wishlist"}>
+                  <FaRegHeart />
+                </NavLink>
+                <NavLink to={"/cart"}>
+                  <FiShoppingCart />
+                </NavLink>
               </div>
               <div className="nav-top-items-search">
                 <p>Items</p>
