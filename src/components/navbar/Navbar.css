@@ -60,17 +60,20 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
+  gap: 10px;
 }
 
 .nav-bottom-logo {
   display: flex;
   align-items: center;
   gap: 5px;
+  width: 30%;
 }
 
 .nav-bottom-list {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 50px;
   list-style: none;
 }
@@ -86,7 +89,40 @@ header {
   color: #40bfff;
 }
 
+.nav-bottom-pages {
+  width: 60%;
+}
+
+.nav-bottom-pages input {
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #40bfff;
+  border-radius: 5px;
+  display: none;
+}
+
+.nav-bottom-category {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bottom-category a {
+  color: black;
+}
+
 @media (max-width: 730px) {
+  .nav-bottom {
+    justify-content: start;
+  }
   .nav-bottom-list {
     gap: 30px;
   }
@@ -95,5 +131,38 @@ header {
 @media (max-width: 631px) {
   .nav-bottom-list {
     gap: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-bottom-list {
+    display: none;
+  }
+  .nav-bottom-pages input {
+    display: block;
+  }
+  .nav-bottom {
+    justify-content: space-between;
+  }
+  .nav-bottom-logo h1 {
+    display: none;
+  }
+  .nav-bottom-logo {
+    width: 20%;
+  }
+  .nav-bottom-pages {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-top {
+    display: none;
+  }
+  main {
+    padding-top: 63px;
+  }
+  .nav-bottom-category {
+    display: flex;
   }
 }

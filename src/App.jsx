@@ -12,6 +12,7 @@ import Wishlist from "./pages/wishlist/Wishlist";
 import Cart from "./pages/cart/Cart";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Auth from "./pages/auth/Auth";
 
 function App() {
   return (
@@ -22,9 +23,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/product/:id" element={<Single />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<Admin />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/" element={<Auth />}>
+          <Route path="/admin" element={<Admin />} />
+        </Route>
       </Routes>
       <ToastContainer />
       <Footer />

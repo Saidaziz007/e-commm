@@ -302,11 +302,25 @@ main {
   gap: 20px;
 }
 
+.card-top select {
+  display: none;
+  width: 100px;
+  padding: 5px;
+  border: 2px solid #40bfff;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
 @media (max-width: 970px) {
   .latest-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .adidas-banner-right img {
+    position: relative;
+    top: 0;
+    width: 100%;
   }
 }
 
@@ -361,5 +375,50 @@ main {
   .featured-wrapper {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+  .hero-banner-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .adidas-banner-all {
+    flex-direction: column;
+  }
+  .adidas-banner-left {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .adidas-banner-right {
+    width: 100%;
+  }
+  .adidas-banner {
+    height: 550px;
+  }
+}
+
+@media (max-width: 470px) {
+  .card-list {
+    display: none;
+  }
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-top select {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .support-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .support-card {
+    width: 100%;
+  }
+  .latest {
+    padding-top: 50px;
   }
 }

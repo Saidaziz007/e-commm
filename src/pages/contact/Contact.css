@@ -51,3 +51,15 @@
   padding: 15px;
   resize: none;
 }
+
+@media (max-width: 515px) {
+  .contact-all {
+    flex-direction: column;
+  }
+  .contact-left {
+    width: 100%;
+  }
+  .contact-right {
+    width: 100%;
+  }
+}

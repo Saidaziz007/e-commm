@@ -13,3 +13,28 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+
+@media (max-width: 900px) {
+  .wishlist-bottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .wishlist-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .wishlist-bottom {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .wishlist {
+    padding-top: 80px;
+  }
+}

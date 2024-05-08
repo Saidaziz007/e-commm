@@ -5,6 +5,8 @@ import { CiBank } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../../context/cartSlice";
+import "./Checkout.css";
+import { toast } from "react-toastify";
 
 let BOT_TOKEN = "7195277167:AAHEophVHUwf_O2Ra8wemtR1szCUsDYwLV8";
 let CHAT_ID = "-4227583259";
@@ -40,12 +42,14 @@ const Checkout = ({ closeModal, data }) => {
     api.send();
     closeModal(false);
     dispatch(clearCart());
+    window.scrollTo(0, 0);
+    toast.success("Buyurtmangiz qabul qilindi yaqin orada aloqaga chiqamiz");
   };
   return (
     <div className="checkout">
       <div className="container">
         <div className="checkout-all">
-          <button onClick={() => closeModal(false)}>
+          <button className="checkout-close" onClick={() => closeModal(false)}>
             <IoMdClose />
           </button>
           <h1>Make Payment</h1>
@@ -56,27 +60,38 @@ const Checkout = ({ closeModal, data }) => {
                 onChange={(e) => setFirstName(e.target.value)}
                 type="text"
                 placeholder="First Name"
+                required
               />
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="text"
                 placeholder="Email Address"
+                required
               />
               <div className="checkout-1-1">
                 <h1>Select Method of Payment</h1>
                 <div className="checkout-1-1-1">
                   <div className="checkout-1-1-1-1">
-                    <IoMdCard />
-                    <h3>Credit Card Or Debit</h3>
+                    <div className="checkout-1-1-1-1-1">
+                      <IoMdCard />
+                      <h3>Credit Card Or Debit</h3>
+                    </div>
+                    <input type="checkbox" />
                   </div>
                   <div className="checkout-1-1-1-1">
-                    <BsPaypal />
-                    <h3>Paypal</h3>
+                    <div className="checkout-1-1-1-1-1">
+                      <BsPaypal />
+                      <h3>Paypal</h3>
+                    </div>
+                    <input type="checkbox" />
                   </div>
                   <div className="checkout-1-1-1-1">
-                    <CiBank />
-                    <h3>Bank Transfer</h3>
+                    <div className="checkout-1-1-1-1-1">
+                      <CiBank />
+                      <h3>Bank Transfer</h3>
+                    </div>
+                    <input type="checkbox" />
                   </div>
                 </div>
               </div>
@@ -87,6 +102,7 @@ const Checkout = ({ closeModal, data }) => {
                 onChange={(e) => setLastName(e.target.value)}
                 type="text"
                 placeholder="Last Name"
+                required
               />
               <textarea
                 value={address}
@@ -94,12 +110,14 @@ const Checkout = ({ closeModal, data }) => {
                 name=""
                 id=""
                 placeholder="Address for Delivery"
+                required
               ></textarea>
               <input
                 value={number}
                 onChange={(e) => setNumber(e.target.value)}
                 type="text"
                 placeholder="Mobile Phone"
+                required
               />
             </div>
             <div className="checkout-btn">

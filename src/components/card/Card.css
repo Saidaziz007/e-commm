@@ -1,5 +1,4 @@
 .card {
-  max-width: 300px;
   height: 400px;
   border: 1px solid #d3d3d3;
   border-radius: 10px;
@@ -30,7 +29,7 @@
 
 .card-info h1 {
   color: rgba(34, 50, 99, 1);
-  font-size: 22px;
+  font-size: 18px;
   padding: 3px 0;
 }
 

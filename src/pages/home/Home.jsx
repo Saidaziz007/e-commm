@@ -54,6 +54,13 @@ const Home = () => {
               <li>Belt</li>
               <li>Sunglasses</li>
             </ul>
+            <select name="" id="">
+              <option value="">All</option>
+              <option value="">Bags</option>
+              <option value="">Sneakers</option>
+              <option value="">Belt</option>
+              <option value="">Sunglasses</option>
+            </select>
           </div>
           <div className="cards-bottom">
             <div className="card-wrapper">

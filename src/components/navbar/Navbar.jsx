@@ -68,7 +68,20 @@ const Navbar = () => {
                   <li>CONTACT</li>
                 </NavLink>
               </ul>
+              <input type="search" placeholder="search" />
             </div>
+          </div>
+          <div className="nav-bottom-category">
+            <NavLink to={"/login"}>
+              <FaRegUser />
+            </NavLink>
+            <NavLink to={"/wishlist"}>
+              <FaRegHeart />
+            </NavLink>
+            <NavLink to={"/cart"}>
+              <FiShoppingCart />
+            </NavLink>
+            <IoSearchSharp />
           </div>
         </nav>
       </div>
