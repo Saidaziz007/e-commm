@@ -11,6 +11,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    window.scrollTo(0, 0);
 
     axios
       .post(API_URL, { username, password })

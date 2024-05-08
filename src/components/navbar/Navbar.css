@@ -66,8 +66,15 @@ header {
 .nav-bottom-logo {
   display: flex;
   align-items: center;
-  gap: 5px;
   width: 30%;
+}
+
+.nav-bottom-logo a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  text-decoration: none;
 }
 
 .nav-bottom-list {

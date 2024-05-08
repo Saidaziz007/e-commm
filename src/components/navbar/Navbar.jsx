@@ -47,8 +47,10 @@ const Navbar = () => {
           </div>
           <div className="nav-bottom">
             <div className="nav-bottom-logo">
-              <img src={navLogo} alt="" />
-              <h1>E-comm</h1>
+              <NavLink to={"/"}>
+                <img src={navLogo} alt="" />
+                <h1>E-comm</h1>
+              </NavLink>
             </div>
             <div className="nav-bottom-pages">
               <ul className="nav-bottom-list">
